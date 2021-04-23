@@ -12,7 +12,7 @@ jobs:
         flutter-version: '2.0.3'
     - run: flutter pub get
     #- run: flutter test
-    - run: flutter build web --dart-define AWS_REGION=$(europe-west2) --dart-define IMAGE_URL=$(https://storage.cloud.google.com/image-bucket-benoittemperville/background-image.jpg)
+    - run: flutter build web --dart-define AWS_REGION=$(europe-west-2) --dart-define IMAGE_URL=$(https://storage.cloud.google.com/image-bucket-benoittemperville/background-image.jpg)
     # setup gcloud
     - uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
       with:
