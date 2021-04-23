@@ -22,7 +22,7 @@ jobs:
     
     # Build docker image
     - name: Build docker image
-      run:  docker build -t eu.gcr.io/$ci-benoit-temperville/flutterapp:$GITHUB_SHA .
+      run:  docker build -t eu.gcr.io/$(ci-benoit-temperville)/flutterapp:$GITHUB_SHA .
     # Configure docker to use the gcloud command-line tool as a credential helper
     - run: gcloud auth configure-docker -q
 
